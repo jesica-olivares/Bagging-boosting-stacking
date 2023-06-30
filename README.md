@@ -24,14 +24,24 @@ where:
 *   $w_m$ is the tunable parameter (i.e. weight assigned to the m-th base model), which can be determined using accuracy/performance indicators or uniformly 
 *   $f_m$ is the prediction of the m-th base model in the ensemble for the input variable $x$ and the target variable $y$,  
 *   $π$ is the ensemble model hyperparameter, which depends on the type of ensemble model being used.  (E.g. for a bagging ensemble, which trains multiple base models on random subsets of the training data, π might represent the number of base models to include in the ensemble and the random seed used to generate the subsets, while for a boosting ensemble, which trains multiple base models sequentially, π might represent the learning rate or the maximum depth of the base models). 
-# 
 *   $p(y|x, m)$ is the m-th model that estimates the probability of y given the input $x$ 
 
 
 Ensemble learning is closely related to learning adaptive-basis function models and can be even claimed to be a neural net where $f_m$ represents the m-th hidden unit and $w_m$ are the output layer weights. 
-# 
+
 The most important characteristics of Ensemble Learning is that is corresponds to enlarging the model scope by defining single new model which is a convex combination of base models. 
-# 
+ 
 However, it is important to note that Ensemble Learning is not equivalent to BMA (Bayes Model Averaging), which is a weighted average of the predictions made by each model given by: 
-#  
+
+  
+$p(y|x, D) = \sum_{m=1}^{M} p(y|x, m,D) p(m|D)$
+
+The latter is a probabilistic approach, whereby weights assigned to each model reflect their posterior probabilities derived through Bayes' theorem. 
+
+### Ensemble algorithm 
+
+The ensemble algorithm diversifies the model predictions using multiple algorithms. 
+# 
+
+![alt text](ensemble_algorithm.webp "Ensemble Algorithm")
 
