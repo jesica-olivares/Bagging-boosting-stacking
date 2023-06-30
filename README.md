@@ -1,12 +1,8 @@
-# Bagging-boosting-stacking
+## <center> Ensemble Learning: 
 
-## Ensemble Learning: 
-### <center> Introduction, investigation and analysis of various techniques 
+### Introduction, investigation and analysis of various techniques 
 
 ### Ensemble Learning Fundamentals  
-
-
-
 Ensemble learning refers to the procedures employed to train multiple learning machines and combine their outputs, treating them as a “committee” of decision makers. The principle is that the decision of the committee, with individual predictions combined appropriately, should have better overall accuracy, on average, than any individual committee member.   
 The members of the ensemble might be predicting real-valued numbers, class labels, posterior probabilities, rankings, clusterings, or any other quantity. Therefore, their decisions can be combined by many methods, including averaging, voting, and probabilistic methods. 
  
